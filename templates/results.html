@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shortlisted Candidates</title>
+</head>
+<body>
+  <h1>Results</h1>
+  <table border="1">
+    <tr>
+      <th>Candidate Name</th>
+      <th>Email</th>
+      <th>Score</th>
+    </tr>
+    {% for candidate in candidates %}
+    <tr>
+      <td>{{ candidate[1] }}</td>
+      <td>{{ candidate[2] }}</td>
+      <td>{{ candidate[4] }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
